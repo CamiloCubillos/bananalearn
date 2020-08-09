@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/sketchy/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>BananaLearn</title>
+  </head>
+  <body>
+    <div class="container-fluid" id="contenedorPrincipal">
+      <div class="row justify-content-center" id="rowPrincipal">
+        <section class="col-md-4 bg-primary" id="seccionMenu">
+          <div class="row align-items-center" id="itemSeccionMenu">
+            <div class="arrowContainer">
+              <img
+                class="arrow leftArrow"
+                id="leftArrowActivity"
+                src="img/arrow.png"
+                height="25%"
+                alt=""
+              />
+            </div>
+            <div class="activityContainer text-center">
+              <h1 id="activity">VOCABULARY</h1>
+            </div>
+
+            <div class="arrowContainer">
+              <img
+                class="arrow"
+                id="rightArrowActivity"
+                src="img/arrow.png"
+                height="25%"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="row text-center" id="itemSeccionMenu">
+            <div
+              class="col-12 align-self-center text-center"
+              id="itemInterfazSegundos"
+            >
+              <h3>Seconds:</h3>
+            </div>
+            <div class="col-12" id="itemInterfazSegundos">
+              <input
+                class="form-control"
+                maxlength="2"
+                type="text"
+                id="segundos"
+              />
+            </div>
+            <div
+              class="col-12 align-self-center text-center"
+              id="itemInterfazSegundos"
+            >
+              <button class="btn btn-light" type="button" id="botonGenerar">
+                Generate
+              </button>
+            </div>
+            <div
+              class="col-12 align-self-center text-center"
+              id="itemInterfazSegundos"
+            >
+              <button class="btn btn-danger" type="button" id="botonDetener">
+                Stop
+              </button>
+            </div>
+          </div>
+          <br /><br /><br />
+          <div class="row align-items-end" id="itemSeccionMenu">
+            <div class="col-12 align-self-center text-center" id="cronometro">
+              <h4>TIME LEFT:</h4>
+              <h3 id="tiempoRestante"></h3>
+            </div>
+          </div>
+        </section>
+        <section class="col-md-8 bg-dark">
+          <div class="row align-items-center justify-content-center vh-100">
+            <div class="bg-dark">
+              <p class="text-light display-1" id="palabra">
+                Words will appear here
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- JS de Bootstrap -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/obtenerPalabra.js"></script>
+    <script src="js/gestorMenu.js"></script>
+  </body>
+</html>
